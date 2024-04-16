@@ -1,0 +1,92 @@
+<!--
+=========================================================
+Name        : index.html
+Assignment  : Lab 3 Exercise D
+Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Submission  : May 21, 2030
+Description : Learning CSS.
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Advanced Demonstrations</title>
+    <style>
+        #margin-demo {
+            margin: 30px;
+            border: 2px solid black;
+            display: inline;
+        }
+
+        .padding-demo {
+            padding: 30px;
+            border: 2px dashed red;
+        }
+
+        .container .nested-opacity {
+            opacity: 0.2;
+        }
+
+        .block-demo {
+            text-align: center;
+        }
+
+        .block-demo > .inline-demo:first-child {
+            float: left;
+            color: red; /* Colors the first child in red */
+        }
+
+        .block-demo > .inline-demo:nth-child(2) {            
+            color: blue; /* Colors the second child in blue */
+        }
+
+        .block-demo > .inline-demo:nth-child(3) {
+            float: right;
+            color: green; /* Colors the third child in green */
+        }
+
+        .inline-demo {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .image-demo {
+            width: 50%;
+            height: auto;
+            border: 2px solid blue;
+        }
+
+        .hover-demo:hover {
+            color: blue;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body style="border: 1px solid black">
+
+    <h2>CSS Margins with ID</h2>
+    <div id="margin-demo"><span>This div must have a margin of 30px, and a solid black border of 2px.</span></div>
+
+    <h2>CSS Padding</h2>
+    <div class="padding-demo"><span>This div must have padding of 30px, and a dashed red border of 2px.</span></div>
+
+    <h2>CSS Opacity with Nested Classes</h2>
+    <div class="container">
+        <div class="nested-opacity"><span>This text must have an opacity of 0.2.</span></div>
+    </div>
+
+    <h2>CSS Display Property</h2>
+    <div class="block-demo">
+        <div class="inline-demo"><span>I am red.</span></div>
+        <div class="inline-demo"><span>I am blue.</span></div>
+        <div class="inline-demo"><span>I am green.</span></div>
+    </div>    
+
+    <h2>CSS Image Styling with Inline CSS</h2>
+    <img class="image-demo" style="border: 3px dotted green;" src="images/example.svg" alt="Demo Image">
+
+    <h2>CSS Hover Effects</h2>
+    <div class="hover-demo"><span>Hover over me! My color will change to blue!</span></div>
+
+</body>
+</html>

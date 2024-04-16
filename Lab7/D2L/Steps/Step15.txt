@@ -1,0 +1,5 @@
+render() {
+    const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+
+return (
+  // the rest has not changed

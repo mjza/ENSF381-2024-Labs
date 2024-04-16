@@ -1,0 +1,78 @@
+<!--
+=========================================================
+Name        : form.html
+Assignment  : Lab 3 Exercise C
+Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Submission  : May 21, 2030
+Description : A simple HTML file for form tag.
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Elements Demonstration</title>
+</head>
+<body>
+    <h1>HTML Form Elements Demo</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choice Elements</legend>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+	
+			<label for="fruits">Choose a fruit:</label><br>
+			<select id="fruits" name="fruits" size="5">
+				<option value="apple">Apple</option>
+				<option value="banana">Banana</option>
+				<option value="orange">Orange</option>
+				<option value="grape">Grape</option>
+				<option value="mango">Mango</option>
+				<option value="apple">Apple</option>
+				<option value="banana">Banana</option>
+				<option value="orange">Orange</option>
+				<option value="grape">Grape</option>
+				<option value="mango">Mango</option>
+			</select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Elements</legend>
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="favcolor">Favorite Color:</label><br>
+            <input type="color" id="favcolor" name="favcolor"><br>
+            <label for="quantity">Quantity (between 1 and 5):</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+            <label for="range">Range (between 1 and 10):</label><br>
+            <input type="range" id="range" name="range" min="1" max="10" value="2"><br>
+            <label for="website">Homepage:</label><br>
+            <input type="url" id="website" name="website"><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="10" cols="80"></textarea><br>
+            <input type="file" id="myfile" name="myfile"><br>
+            <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+            <label for="subscribe">Subscribe to newsletter</label><br>
+            <input type="hidden" id="customerId" name="customerId" value="12345">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+</html>

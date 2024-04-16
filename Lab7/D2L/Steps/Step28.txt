@@ -1,0 +1,14 @@
+handleClick(i) {
+// this method has not changed
+}
+
+jumpTo(step) {
+this.setState({
+  stepNumber: step,
+  xIsNext: (step % 2) === 0,
+});
+}
+
+render() {
+// this method has not changed
+}
